@@ -32,14 +32,20 @@ namespace PostProject.Src.Entities
             DateComment = dateComment;
             LikesComment = likesComment;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return "Comment ( Comment:  " + TextComment 
                 + "\n \tLike(s)(" + LikesComment
                 + ") Date:" + DateComment +")";
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public string ShowComment()
         {
             return "Comment: " +  TextComment

@@ -19,7 +19,13 @@ namespace PostProject.Src.Entities
         public DateTime DatePost { get; set; } = DateTime.Now;
 
         public int Likes { get; set; } = 0;
-
+        /// <summary>
+        /// /
+        /// </summary>
+        /// <param name="title"></param>
+        /// <param name="content"></param>
+        /// <param name="datePost"></param>
+        /// <param name="likes"></param>
         public Post(string title, string content, DateTime datePost, int likes)
         {
             Title = title;
@@ -40,12 +46,19 @@ namespace PostProject.Src.Entities
 
 
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="commentPost"></param>
         public void AddComment (Comment commentPost){
 
             Comments.Add(commentPost);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public string ShowListComments()
         {
 
@@ -57,6 +70,11 @@ namespace PostProject.Src.Entities
 
             return post;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public string ShowPost()
         {
 
